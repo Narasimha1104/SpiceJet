@@ -34,6 +34,7 @@ public class LoginTest extends ProjectSpecifications{
 		loginPage= new LoginPage(driver);
 		
 		loginPage.login(mobileNumber, Password);
+		loginPage.closeDriver();
 	}
 
 }
