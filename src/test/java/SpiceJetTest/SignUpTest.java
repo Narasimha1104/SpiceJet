@@ -21,7 +21,7 @@ public class SignUpTest extends ProjectSpecifications{
 	}
 	
 	
-	@Test(dataProvider = "readExcel")
+	@Test(dataProvider = "getExcelData")
 	public void SignUpTest(String fName,String lName, String DOB, String Number,String email, String password, 
 			String ConfirmPassword) throws InterruptedException, AWTException {
 

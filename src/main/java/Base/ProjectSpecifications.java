@@ -18,9 +18,8 @@ public class ProjectSpecifications extends Utilities{
 	}
 	
 	@DataProvider(name = "readExcel")
-	public String[][] getExceldata() throws IOException {
-		String[][] data = readExcel(excelFile, excelSheet);
-		return data;
+	public String[][] getExcelData() throws IOException {
+        return readExcel(excelFile, excelSheet);
 	}
 
 	@AfterMethod

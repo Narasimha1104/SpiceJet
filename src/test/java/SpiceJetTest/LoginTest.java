@@ -23,7 +23,7 @@ public class LoginTest extends ProjectSpecifications{
 	
 	
 	
-	@Test(dataProvider = "readExcel")
+	@Test(dataProvider = "getExcelData")
 	public void SignUpTest(String mobileNumber, String Password) throws InterruptedException {
 		
 		homePage = new HomePage(driver);
