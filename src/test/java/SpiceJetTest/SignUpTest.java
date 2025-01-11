@@ -1,4 +1,4 @@
-package SpiceJectTest;
+package SpiceJetTest;
 
 import java.awt.AWTException;
 

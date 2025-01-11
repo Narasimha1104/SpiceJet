@@ -5,7 +5,7 @@
     <test thread-count="5" name="Test">
         <parameter name="url" value="https://www.spicejet.com/"></parameter>
         <classes>
-            <class name="SpiceJectTest.BookRundTrip"/>
+            <class name="SpiceJetTest.BookOneWayTicket"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

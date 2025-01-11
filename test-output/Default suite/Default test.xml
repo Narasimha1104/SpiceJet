@@ -40,7 +40,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
     </failure>
   </testcase> <!-- @BeforeMethod launchBrowser -->
-  <testcase classname="SpiceJectTest.PassengersDetailsTest" name="bookOneWayTickect" time="0.001">
+  <testcase classname="SpiceJetTest.PassengersDetailsTest" name="bookOneWayTickect" time="0.001">
     <skipped/>
   </testcase> <!-- bookOneWayTickect -->
 </testsuite> <!-- Default test -->

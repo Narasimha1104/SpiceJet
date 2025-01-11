@@ -5,12 +5,12 @@
   <test thread-count="5" name="Test(failed)" verbose="2">
     <parameter name="url" value="https://www.spicejet.com/"/>
     <classes>
-      <class name="SpiceJectTest.PassengersDetailsTest">
+      <class name="SpiceJetTest.PassengersDetailsTest">
         <methods>
           <include name="bookOneWayTickect"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- SpiceJectTest.PassengersDetailsTest -->
+      </class> <!-- SpiceJetTest.PassengersDetailsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

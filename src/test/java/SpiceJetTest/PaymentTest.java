@@ -1,11 +1,7 @@
-package SpiceJectTest;
+package SpiceJetTest;
 
 import java.awt.AWTException;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Base.ProjectSpecifications;
@@ -15,20 +11,18 @@ import SpiceJetPages.PassengerDetailsPage;
 import SpiceJetPages.PrepaymentPage;
 import SpiceJetPages.SelectFlight;
 import SpiceJetPages.SelectingTypeOfTripPage;
-import Utility.Utilities;
 
-public class PassengersDetailsTest extends ProjectSpecifications {
-
+public class PaymentTest extends ProjectSpecifications{
+	
 	HomePage HomePage;
 	AddonPage addonPage;
 	SelectingTypeOfTripPage bookTicket;
 	SelectFlight selectFlight;
 	PassengerDetailsPage passengerDetailsPage;
 	PrepaymentPage payment;
-
-	@Test
-	public void bookOneWayTickect() throws InterruptedException, AWTException {
-		bookTicket = new SelectingTypeOfTripPage(driver);
+  @Test
+  public void payment() throws AWTException, InterruptedException {
+	  bookTicket = new SelectingTypeOfTripPage(driver);
 		bookTicket.oneWayTrip("Delhi", "Hyderabed", "28", "March 2024");
 		
 		selectFlight = new SelectFlight(driver);
@@ -46,15 +40,5 @@ public class PassengersDetailsTest extends ProjectSpecifications {
 		
 		Thread.sleep(5000);
 		addonPage.addonScreenActions();
-		
-		Thread.sleep(2000);
-
-		switchWindows("https://www.spicejet.com/booking/prepayment");
-		payment= new PrepaymentPage(driver);
-
-		payment.cardDetails("123456789021", "Patience Carney", "06", "2026", "125");
-
-
-		
-	}
+  }
 }

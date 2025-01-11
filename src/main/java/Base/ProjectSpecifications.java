@@ -14,7 +14,7 @@ public class ProjectSpecifications extends Utilities{
 	@Parameters({"browser","url"})
 	@BeforeMethod
 	public void launchBrowser(String browser, String url) {
-		browserLaunch("chrome","https://www.spicejet.com/");
+		browserLaunch(browser,url);
 	}
 	
 	@DataProvider(name = "readExcel")

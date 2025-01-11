@@ -1,9 +1,7 @@
-package SpiceJectTest;
+package SpiceJetTest;
 
 import java.awt.AWTException;
 
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Base.ProjectSpecifications;

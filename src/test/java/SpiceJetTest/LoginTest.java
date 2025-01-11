@@ -1,4 +1,4 @@
-package SpiceJectTest;
+package SpiceJetTest;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -34,7 +34,6 @@ public class LoginTest extends ProjectSpecifications{
 		loginPage= new LoginPage(driver);
 		
 		loginPage.login(mobileNumber, Password);
-		loginPage.closeDriver();
 	}
 
 }

@@ -42,7 +42,7 @@ public class Utilities {
 			options.setExperimentalOption("excludeSwitches",
 			Arrays.asList("disable-popup-blocking"));
 			
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 			}
 		else if(browser.equals("firefox")) {
 			driver = new FirefoxDriver();
@@ -57,9 +57,10 @@ public class Utilities {
 			driver = new ChromeDriver();
 		}
 		
-		driver.get(url);
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	
 	}
